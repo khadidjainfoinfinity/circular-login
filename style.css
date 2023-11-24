@@ -1,0 +1,395 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+
+
+*{
+  padding:  0;
+  margin:  0;
+  box-sizing:  border-box;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing:  .6px;
+  text-transform:  capitalize;
+  color:  #001121;
+}
+
+body {
+    display:  flex;
+    justify-content:  center;
+    align-items:  center;
+    min-height:  100vh;
+    width:  100%;
+    background:  #E4EFF8;
+}
+
+.container{
+  display:  flex;
+    justify-content:  center;
+    align-items:  center;
+    position:  relative;
+}
+
+.container img{
+  position:  absolute;
+  z-index:  -1;
+  width:  600px;
+}
+
+form{
+  width:  460px;
+  height:  460px;
+  border-radius:  50%;
+  padding:  1.8rem 3rem;
+  background: rgba( 179, 213, 254, 0.05 );
+box-shadow: 0 0 32px 0 rgba( 31, 38, 135, 0.3 );
+backdrop-filter: blur( 12px );
+-webkit-backdrop-filter: blur( 12px );
+  position:  relative;
+  border:  3px solid rgba( 255, 255, 255, 0.7 )
+}
+
+form h1{
+  text-align:  center;
+  margin:  10px 0;
+  font-size:  2.3rem;
+}
+
+
+form .icon-box{
+  text-align:  center;
+  margin:  5px;
+  padding:  10px 30px;
+  display:  flex;
+    justify-content:  space-evenly;
+    align-items:  center;
+}
+
+
+form .icon-box i{
+  width:  40px;
+  height:  40px;
+  border-radius:  8px;
+  border:  2px solid #BCDAFF;
+  display:  flex;
+    justify-content:  center;
+    align-items:  center;
+    font-size:  1.2rem;
+    transition:  .4s ease-out;
+}
+
+form .icon-box i:hover{
+  background:  rgba( 255, 255, 255, 0.55 );
+}
+
+form span{
+  display:  block;
+  text-align:  center;
+  margin:  10px;
+  font-weight:  600;
+  font-size:  1rem;
+}
+
+
+form .input-box{
+  text-align:  center;
+  display:  flex;
+  flex-flow:  column nowrap;
+    justify-content:  space-around;
+    align-items:  center;
+}
+
+
+form .input-box input{
+  margin:  10px;
+  padding:  .4rem .8rem;
+  outline:  none;
+  border:  2px solid #BCDAFF;
+  background:  transparent;
+  border-radius:  10px;
+  color:  #000;
+  transition:  .4s ease-out;
+}
+
+form .input-box input::placeholder{
+  color:  #2B3F52;
+}
+
+form .input-box input:hover::placeholder{
+  color:  transparent;
+}
+
+
+form .remember {
+  text-align:  center;
+  margin:  10px;
+  display:  flex;
+    justify-content:  center;
+    align-items:  center;
+    position:  relative;
+}
+
+form .remember #checkbox{
+  appearance:  none;
+  width:  25px;
+  height:  25px;
+  background:  transparent;
+  border:  1px solid #BCDAFF;
+  border-radius:  5px;
+  transition:  .5s ease-out;
+}
+
+
+form .remember label{
+  margin-left:  10px;
+}
+
+form .remember i{
+  position:  absolute;
+  font-size:  1.5rem;
+  top: 0;
+  left:  80px;
+  visibility:  hidden;
+}
+
+.check:checked + .fa-solid{
+  visibility:  visible;
+}
+
+
+
+form .btn-box{
+  display:  flex;
+    justify-content:  center;
+    align-items:  center;
+    margin:  25px
+}
+
+
+form button{
+  text-align:  center;
+  padding:  7px 25px;
+  font-size:  1.3rem;
+  font-weight:  600;
+  border-radius:  20px;
+  border: 2px solid #BCDAFF;
+  background: linear-gradient( 150deg, #DCECFF , transparent,#DCECFF) ;
+  transition:  .5s ease-out;
+}
+
+form button:hover{
+  background: #8EC7FF;
+}
+
+@media( max-width: 600px){
+  .container img{
+    width:  500px;
+  }
+  
+  form{
+    width: 380px;
+    height : 380px;
+  }
+  
+  
+  form h1{
+  margin:  5px 0;
+  font-size:  2rem;
+}
+
+form .icon-box{
+  text-align:  center;
+  margin:  3px;
+  padding:  8px 20px;
+}
+
+
+form .icon-box i{
+  width:  35px;
+  height:  35px;
+    font-size:  1rem;
+}
+
+form span{
+  margin:  8px;
+  font-size:  .9rem;
+}
+
+form .input-box input{
+  margin:  8px;
+  padding:  .4rem .8rem;
+  border-radius:  8px;
+}
+
+
+form .remember {
+  margin:  8px;
+}
+
+form .remember #checkbox{
+  width:  20px;
+  height:  20px;
+}
+
+form .remember label{
+  margin-left:  5px;
+}
+
+form .remember i{
+  font-size:  1.3rem;
+  top: 0;
+  left:  45px;
+}
+
+form .btn-box{
+    margin:  10px
+}
+
+form button{
+  padding:  5px 20px;
+  font-size:  1rem;
+}
+
+}
+
+@media( max-width: 500px){
+ .container img{
+    width:  400px;
+  }
+  
+  form{
+    width: 340px;
+    height : 340px;
+  }
+  
+  form h1{
+  margin: 0;
+  font-size:  1.8rem;
+}
+form .icon-box{
+  text-align:  center;
+  margin: 0;
+}
+
+
+form .icon-box i{
+  width:  26px;
+  height:  26px;
+    font-size:  .9rem;
+}
+
+form span{
+  margin:  8px;
+  font-size:  .7rem;
+}
+
+form .input-box input{
+  margin:  5px;
+  padding:  .3rem .6rem;
+  border-radius:  6px;
+}
+form .remember {
+  margin:  6px;
+}
+
+form .remember #checkbox{
+  width:  18px;
+  height:  18px;
+}
+
+
+form .remember label{
+  margin-left:  5px;
+  font-size:  .7rem;
+}
+
+form .remember i{
+  font-size:  1.2rem;
+  top: 0;
+  left:  50px;
+}
+
+form .btn-box{
+    margin:  12px
+}
+
+form button{
+  padding:  4px 18px;
+  font-size:  .9rem;
+}
+  
+  
+}
+
+@media( max-width: 400px){
+  .container img{
+    width:  360px;
+  }
+  
+  form{
+    width: 310px;
+    height : 310px;
+  }
+  
+  form h1{
+  margin : 0;
+  font-size:  1.5rem;
+}
+form .icon-box{
+  text-align:  center;
+  margin: 0;
+}
+
+
+form .icon-box i{
+  width:  26px;
+  height:  26px;
+    font-size:  .9rem;
+}
+
+form span{
+  margin:  8px;
+  font-size:  .7rem;
+}
+
+form .input-box input{
+  width:  98%;
+  margin:  4px;
+  padding:  .2rem .4rem;
+  border-radius:  6px;
+}
+form .remember {
+  margin:  5px;
+}
+
+form .remember #checkbox{
+  width:  18px;
+  height:  18px;
+}
+
+
+form .remember label{
+  margin-left:  5px;
+  font-size:  .7rem;
+}
+
+form .remember i{
+  font-size:  1.2rem;
+  top: 0;
+  left:  35px;
+}
+
+form .btn-box{
+    margin:  12px
+}
+
+form button{
+  padding:  4px 18px;
+  font-size:  .9rem;
+}
+  
+  
+  
+  
+  
+  
+}
